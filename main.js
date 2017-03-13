@@ -20,4 +20,4 @@ function initMap() {
           title: 'gas station AAA',
           map: map
         });
-}
+    }
