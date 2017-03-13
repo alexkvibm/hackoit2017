@@ -15,7 +15,7 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var carImage = 'images/car.png';
+        var carImage = 'https://raw.githubusercontent.com/alexkvibm/hackoit2017/master/images/car.png';
         var carPos = {lat: -25.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
@@ -28,7 +28,7 @@
           map: map
         });
         
-        var gasStationImage = 'images/station.png';
+        var gasStationImage = 'https://raw.githubusercontent.com/alexkvibm/hackoit2017/master/images/station.png';
         var gasStationPos = {lat: -23.363, lng: 133.044};
         var gasStation = new google.maps.Marker({
           position: gasStationPos,
