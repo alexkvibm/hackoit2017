@@ -2,7 +2,7 @@
 <html> 
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	    <link rel="stylesheet" href="https://raw.githubusercontent.com/alexkvibm/hackoit2017/master/style.css" />
+	  
 	    <script type="text/javascript" src="https://raw.githubusercontent.com/alexkvibm/hackoit2017/master/main.js"></script>
       <style>
         #map {
@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <h3 id='title'>Dashboard</h3>
+    <div id='title' onload="showTelemetry()" >Dashboard</div>
     <div id="map" onload="initMap()"></div>  
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg8sf0-g1nV0l3T-QYELne9XjfmbwZS5o&callback=initMap">

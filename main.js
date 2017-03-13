@@ -20,4 +20,10 @@ function initMap() {
           title: 'gas station AAA',
           map: map
         });
-    }
+}
+
+function showTelemetry(){
+   var speed = 100; 
+   var fuel = 100; 
+   document.getElementById('title').innerHTML = 'Speed:' + speed + ' Fuel:' +fuel;  
+}
