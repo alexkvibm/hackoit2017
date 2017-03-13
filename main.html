@@ -13,11 +13,13 @@
     </style>
   </head>
   <body>
-    <div id='title' onload="showTelemetry()" >Dashboard</div>
-    <div id="map" onload="initMap()"></div>  
+    <div id='title' onclick="showTelemetry()" >Dashboard</div>
+    <div id="map" onload="initMap()"></div>
+    <div id='legend' onclick="deleteMarkers()" >Refresh</div>  
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg8sf0-g1nV0l3T-QYELne9XjfmbwZS5o&callback=initMap">
     </script>
+
 
   </body>
 
