@@ -15,13 +15,25 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var carImage = 'images/car.png';
+        var carPos = {lat: -25.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: uluru
+          center: carPos
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
+        var car = new google.maps.Marker({
+          position: carPos,
+          icon: carImage,
+          title: 'my car',
+          map: map
+        });
+        
+        var gasStationImage = 'images/station.png';
+        var gasStationPos = {lat: -23.363, lng: 133.044};
+        var gasStation = new google.maps.Marker({
+          position: gasStationPos,
+          icon: gasStationImage,
+          title: 'gas station A',
           map: map
         });
       }
